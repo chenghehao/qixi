@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="css3特效，3D旋转特效">
+    <meta name="Description" content="基于原生js结合css3实现的3D旋转爱心特效，华丽炫酷，做一个浪漫的程序猿！兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。">
+    <title>最爱许大蓉</title>
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+		<audio src="jielun2.mp3" id="myaudio" controls="controls" loop="false" hidden="true"></audio>
+	<div class="heart">
+		<div class="cube">
+			<div><img src="images/1.jpg" width="50" height="50" alt=""></div>
+			<div><img src="images/2.jpg" width="50" height="50" alt=""></div>
+			<div><img src="images/3.jpg" width="50" height="50" alt=""></div>
+			<div><img src="images/4.jpg" width="50" height="50" alt=""></div>
+			<div><img src="images/5.jpg" width="50" height="50" alt=""></div>
+			<div><img src="images/6.jpg" width="50" height="50" alt=""></div>
+		</div>
+	</div>
+	<script language="javascript" type="text/javascript">
+		//开始播放
+		function autoPlay() {
+				var myAuto = document.getElementById('myaudio');
+				myAuto.play();
+		}
+		//暂停播放
+		function closePlay() {
+				var myAuto = document.getElementById('myaudio');
+				myAuto.pause();
+				myAuto.load();
+		}
+		//一秒后响起音乐
+		setTimeout(autoPlay, 1000); 
+	</script>
+	<script src="js/demo.js"></script>
+</body>
+</html>
